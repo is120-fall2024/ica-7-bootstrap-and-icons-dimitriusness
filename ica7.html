@@ -1,13 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nolan's Bootstrap Demo for ICA 7</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="ica7.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nolan's Bootstrap Demo for ICA 7</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="ica7.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
 
 
 
@@ -18,30 +23,101 @@
 
 
 
-<body>
-    <header>
-        <!-- <nav id="nolan_navbar" class="navbar navbar-expand-lg bg-body-tertiary px-3 mb-3 sticky-top"> -->
-        <nav id="nolan_navbar" class="navbar navbar-expand-lg bg-body-tertiary px-3 fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#top4_carousel">
-                <img src="/movie-projector-2-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                <em>Nolan Porras</em>
-              </a>
+  <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#recent">Recent</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#watchlist">Watchlist</a>
-                </li>
-              </ul>
+    <nav id="nolan_navbar" class="navbar bg-white position-sticky top-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#top4_carousel">
+            <span class="material-symbols-outlined d-inline-block align-text-top" style="font-size: 30px;">
+                movie
+              </span>              
+          <em>Nolan Porras</em>
+        </a>
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#recent">Recent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-black" href="#watchlist">Watchlist</a>
+          </li>
+      </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div id="carouselbox" class="bg-black text-center text-white">
+        <h4 id="top4_carousel" class="fs-1 pb-2  pt-5">These are my LetterBoxd Top 4 movies</h4>
+
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-indicators" >
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-          </nav>
-    </header>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">         
+                <div id="img-wrapper" class="d-flex justify-content-center align-items-center bg-black">
+                    <img src="/bladerunner.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <div id="img-wrapper" class="d-flex align-items-center justify-content-center">
+                    <img src="/mononoke.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <div id="img-wrapper" class="d-flex align-items-center justify-content-center">
+                    <img src="/eeaao.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p> -->
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <div id="img-wrapper" class="d-flex align-items-center justify-content-center">
+                    <img src="/princessbride.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p> -->
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+    </div>
 
 
 
@@ -51,29 +127,135 @@
 
 
 
- 
-    <main class="mt-5 pt-4">
-        <div data-bs-spy="scroll" data-bs-target="#nolan_navbar" data-bs-root-margin="0px 0px -40%" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-            <section id="top4_carousel">
-                <h4>These are my LetterBoxd top 4 movies</h4>
-                <p>...</p>
-            </section>
 
-            <section id="about">
-                <h4>Hi, I'm Nolan.</h4>
-                <p>...</p>
-            </section>
+    <div id="content" data-bs-spy="scroll" data-bs-target="#nolan_navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-black px-3" tabindex="0">
+        
 
-            <section id="recent">
-                <h4>These are the most recent movies I have seen</h4>
-                <p>...</p>
-            </section>
+            <h4 id="about" class="text-primary pt-3">Hi, I'm Nolan.</h4>
+            <p class="text-primary pb-10">I like watching movies and this is a website where I can talk about them!</p>
+            <div id="spacing""></div>
+        
 
-            <section id="watchlist">
-                <h4>These are the movies on my watchlist</h4>
-                <p>...</p>
-            </section>
-        </div>
-    </main>
-</body>
+    
+
+
+
+
+            <h4 id="recent" class="text-primary pt-3">Check out my latest movie reviews!</h4>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <img src="/completeunknown.webp" class="card-img-top" alt="A Complete Unknown">
+                      <div class="card-body text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reviewOne" aria-expanded="false" aria-controls="reviewOne">
+                          Review
+                        </button>
+                        <div class="collapse mt-3" id="reviewOne">
+                          <p>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                          </p>
+                          <p>I am always hesitant about music biopics, but this was fun and Timothee did a great job!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <img src="/dunept2.webp" class="card-img-top" alt="Dune Pt.2">
+                      <div class="card-body text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reviewTwo" aria-expanded="false" aria-controls="reviewTwo">
+                          Review
+                        </button>
+                        <div class="collapse mt-3" id="reviewTwo">
+                          <p>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                          </p>
+                          <p>Denis Villenueve the GOAT of the modern sci-fi epic!! Even better that Part 1, this movie was incredible to watch on the big screen.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <img src="/singing.jpg" class="card-img-top" alt="Singing In The Rain">
+                      <div class="card-body text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reviewThree" aria-expanded="false" aria-controls="reviewThree">
+                          Review
+                        </button>
+                        <div class="collapse mt-3" id="reviewThree">
+                          <p>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                          </p>
+                          <p>A Classic for good reason. Gene Kelly is excellent and this movie serves as the blueprint for so many other projects down the road.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            <div id="spacing"></div>
+
+        
+
+    
+
+
+
+
+            <h4 id="watchlist" class="text-primary pt-3">Suggest a Movie for My Watchlist!</h4>
+            <div class="container my-5">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label text-white">Your Name (Optional)</label>
+                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="movieName" class="form-label text-white">Movie</label>
+                      <input type="text" class="form-control" id="movieName" placeholder="Movie Name" required>
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="director" class="form-label text-white">Director (Optional)</label>
+                      <input type="text" class="form-control" id="director" placeholder="Director's Name">
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="reason" class="form-label text-white">Why Should I Watch It?</label>
+                      <textarea class="form-control" id="reason" rows="3" placeholder="Tell me why it's worth watching!" required></textarea>
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-symbols-outlined align-middle">send</span> Send
+                    </button>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+        
+
+    
+
+
+
+
+
+  </body>
 </html>
